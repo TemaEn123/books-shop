@@ -1,4 +1,4 @@
-import { CiSearch } from "react-icons/ci";
+import Search from "../Search/Search";
 
 import styles from "./styles.module.scss";
 
@@ -11,7 +11,7 @@ interface Props {
 const TopBlock = ({ title, text, page }: Props) => {
   return (
     <div className={styles.topBlock}>
-      <div className="container">
+      <div className={styles.topBlock__container}>
         <div
           className={`${styles.topBlock__content} ${
             page === "blog" ? styles.blog : ""
@@ -20,10 +20,7 @@ const TopBlock = ({ title, text, page }: Props) => {
           <div className={styles.topBlock__info}>
             <h1>{title}</h1>
             <p>{text}</p>
-            <div className={styles.topBlock__search}>
-              <CiSearch />
-              <input type="text" placeholder="Search Book" />
-            </div>
+            <Search type="books" placeholder="Search Book" />
           </div>
         </div>
       </div>
