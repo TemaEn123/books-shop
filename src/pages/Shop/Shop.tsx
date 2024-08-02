@@ -1,4 +1,5 @@
 import TopBlock from "../../components/TopBlock/TopBlock";
+import Filters from "../../components/Filters/Filters";
 
 import styles from "./styles.module.scss";
 
@@ -9,7 +10,11 @@ const Shop = () => {
   return (
     <>
       <TopBlock title={title} text={text} page="shop" />
-      <main className="main"></main>
+      <main className="main">
+        <div className="container">
+          <Filters />
+        </div>
+      </main>
     </>
   );
 };
