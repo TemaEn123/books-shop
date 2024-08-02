@@ -20,18 +20,33 @@ body.lock {
 
 .container {
   width: 100%;
-  max-width: 1190px;
+  max-width: 1330px;
   margin: 0px auto;
   padding: 0 15px;
 }
 
 .main {
+  padding: 90px 0 80px;
   flex: 1 1 auto;
+  background-color: #f5f6f8;
 }
 
 .button-hover {
   transition: transform 0.5s ease 0s;
   &:hover {
     transform: translateY(-3px);
+  }
+}
+
+.range-slider {
+  height: 4px;
+  background-color: #dddddd;
+  &__thumb {
+    background: $orange !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+  &__range {
+    background: $orange !important;
   }
 }
